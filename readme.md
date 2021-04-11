@@ -15,6 +15,6 @@
 ### Setup
 
 > In order to make any change to the source code, you have to compile the SCSS again (with "node-sass" package). The steps to start the watcher (that compiles the SCSS) are:
-- npm install
-- npm run watch:scss
+- ```npm install```
+- ```npm run watch:scss```
 - enjoy changing the code

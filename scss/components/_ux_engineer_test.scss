@@ -1,0 +1,136 @@
+// Styles to be included below this line
+
+.dark-btn {
+  border-radius: 5px;
+  border: none;
+  background: #2f2f2f;
+  transition: all 0.1s ease-in-out;
+}
+
+.dark-btn:hover {
+  cursor: pointer;
+  background: #6287F2 !important;
+}
+
+#svgmap {
+  #land {
+    fill: $land-light;
+    transition: all 0.1s ease-in-out;
+  }
+
+  #major path {
+    stroke: $major-light;
+    stroke-width: 5px;
+  }
+
+  #minor path {
+    stroke: $minor-light;
+    stroke-width: 7px;
+  }
+
+  #forest path {
+    fill: $forest-light;
+    stroke-width: 0.5px;
+    stroke-opacity: 0.2;
+  }
+
+  #industrial path {
+    fill: $industrial-light;
+    stroke-width: 0.5px;
+    stroke-opacity: 0.2;
+  }
+
+  #cemetery polygon {
+    fill: $cemetery-light;
+    stroke-width: 0.5px;
+    stroke-opacity: 0.2;
+  }
+
+  #hospital path {
+    fill: $hospital-light;
+    stroke-width: 0.5px;
+    stroke-opacity: 0.2;
+  }
+
+  #water path {
+    stroke: $water-light;
+    stroke-width: 3px;
+  }
+
+  #water #no-water path {
+    stroke: $no-water-light;
+    stroke-width: 4px;
+  }
+
+  .shadow {
+    filter: drop-shadow(0px 0px 0px #000000);
+  }
+
+  #park path {
+    stroke-width: 0;
+    fill: $park-light;
+  }
+
+  #pedestrianoutline path {
+    stroke: $pedestrianoutline-light;
+    stroke-width: 4px;
+  }
+
+  #sport path {
+    fill: $sport-light;
+  }
+}
+
+.svgmap.dark {
+  #land {
+    fill: $land-dark !important;
+  }
+
+  #major path {
+    stroke: $major-dark!important;
+  }
+
+  #minor path {
+    stroke: $minor-dark !important;
+  }
+
+
+  #forest path {
+    fill: $forest-dark!important;
+  }
+
+  #industrial path {
+    fill: $industrial-dark!important;
+  }
+
+  #cemetery polygon {
+    fill: $cemetery-dark!important;
+  }
+
+  #hospital path {
+    fill: $hospital-dark!important;
+  }
+
+  #water path {
+    stroke: $water-dark!important;
+  }
+
+  #water #no-water path {
+    stroke: $no-water-dark!important;
+  }
+
+  #park path {
+    fill: $park-dark!important;
+  }
+
+  #pedestrianoutline path {
+    stroke: $pedestrianoutline-dark!important;
+  }
+
+  #sport path {
+    fill: $sport-dark!important;
+  }
+}
+
+
+// eof

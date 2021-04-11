@@ -1,0 +1,84 @@
+// Styles for the sidebar and it's contents
+
+
+//setting the sidebar to DISPLAY:FLEX ensures all it's children will stay side-by-side
+.app-sidebar {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+}
+
+// Tab-bar's COLUMN property will force the children to stack one below eachother
+.tab-bar {
+    width: $sidebarWidth;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: $sidebarColor;
+    z-index: 1000;
+
+    &-bottom, 
+    &-top {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1
+    }
+
+    &-bottom {
+        justify-content: flex-end;
+    }
+
+    // Style the actual babs
+    ul {
+        width: 100%;
+
+        // The tab
+        li {
+            width: 100%;
+            height: 100px;
+            position: relative;
+            cursor: pointer;
+            @include flex-center;
+            flex-direction: column;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: $sidebarActiveColor;
+            }
+
+            span {
+                font-size: 14px;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .icon {
+                @include flex-center;
+                margin-bottom: 14px;
+            }
+
+            &.active {
+                background: $sidebarActiveColor;
+                svg * {
+                    fill: $sidebarActiveText;
+                }
+                span {
+                    color: $sidebarActiveText;
+                }
+            }
+        }
+
+        // Overrides for the Logo Tab
+        .logo {
+            font-size: 40px;
+            font-weight: 700;
+
+            span {
+                font-size: inherit;
+            }
+        }
+    }
+
+}
+
+// eof

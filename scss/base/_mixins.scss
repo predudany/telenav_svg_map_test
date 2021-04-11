@@ -1,0 +1,23 @@
+// User defined mixins (functions)
+// Used to fasten the code writting
+
+
+// absolute-full: Requires it's parent to have RELATIVE position
+// sets the current element to fill the entire parent container
+@mixin absolute-full {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+
+// Center aligns the content of any element
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// eof

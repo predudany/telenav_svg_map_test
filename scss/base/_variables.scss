@@ -1,0 +1,55 @@
+// Main theme sheet
+// Adjust values below to change the theme of the app
+
+// Define Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+$baseFontFam: 'Montserrat', sans-serif;
+
+
+// Sidebar
+$sidebarColor: #1D1D1D;
+$sidebarWidth: 100px;
+
+
+$sidebarActiveColor: #272727;
+$sidebarActiveText: #6287F2;
+
+
+// SidebarContent
+
+$sidebarContentWidth: 400px;
+$sidebarContentBackground: $sidebarActiveColor;
+$sidebarContentColor: #ccc;
+$sidebarContentPadding: 30px;
+$sidebarContentPadding: 30px;
+
+
+// MapColors
+$land-light: #ede9e1;
+$major-light: #fffb94;
+$minor-light: #f7f7f7;
+$forest-light: #94da8e;
+$industrial-light: #bdbdbd;
+$cemetery-light: #949494;
+$hospital-light: #ffd7d7;
+$water-light: #77ace7;
+$no-water-light: #f8f6ef;
+$park-light: #b6d19f;
+$pedestrianoutline-light: #f8f6ef;
+$sport-light: #f5ddab;
+
+// MapColors Dark mode
+$land-dark: #2c2e2f;
+$major-dark: #959350;
+$minor-dark: #595c5e;
+$forest-dark: #344733;
+$industrial-dark: #3b3c3d;
+$cemetery-dark: #474a4c;
+$hospital-dark: #826767;
+$water-dark: #446b97;
+$no-water-dark: #858585;
+$park-dark: #495540;
+$pedestrianoutline-dark: #5b5b5b;
+$sport-dark: #443d2e;
+// eof

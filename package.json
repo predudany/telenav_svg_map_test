@@ -1,0 +1,14 @@
+{
+  "name": "telenav_svg_map_test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compile:scss": "node-sass scss/style.scss css/style.css",
+    "watch:scss": "node-sass scss/style.scss css/style.css -w"
+  },
+  "author": "Daniel Predusel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

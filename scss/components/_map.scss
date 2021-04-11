@@ -1,0 +1,96 @@
+// Map styles
+
+.app-map {
+    flex-grow: 1;
+    position: relative;
+}
+
+// Style Map as a sketch
+.svgmap * {
+    fill: none;
+    stroke-width: 1px;
+}
+
+
+// Bottom Commands
+.bottom-toolbars {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    z-index: 100;
+
+    //  user select none disables the text sleection in case the user multiple clicks on a button
+    //  like multiple clicking on the increase/decrease buttons for the zoom, won't select the -/+ symbols
+    * {
+        user-select: none;
+    }
+
+    .group {
+        margin-right: 20px;
+        height: 56px;
+        overflow: hidden;
+        border-radius: 8px;
+        border: 1px solid #666;
+        background: $sidebarColor;
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ccc;
+
+        > div {
+            min-width: 56px;
+            @include flex-center;
+            cursor: pointer;
+        }
+
+        .search, .expand, .capture, .saved, .favourites, .decrease, .increase {
+            background: #2f2f2f;
+        }
+
+        .expand {
+            border-left: 1px solid #666;
+            border-right: 1px solid #666;
+        }
+        .coordinates, .zoom-value {
+            padding: 0 20px;
+        }
+
+        input {
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ccc;
+            text-align: center;
+            background: none;
+            width: 80px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+}
+
+// Place the map in place
+#svgmap {
+    position: absolute;
+    top: 0;
+    bottom:0;
+    height: 100%;
+    width: auto;
+    z-index: 0;
+
+    //  once an element gets the hidden class, it dissappears from view
+    .hidden {
+        opacity: 0;
+    }
+}
+
+// eof

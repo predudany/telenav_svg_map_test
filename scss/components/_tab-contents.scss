@@ -1,0 +1,128 @@
+// Styles fort the tabs contents 
+
+.tab-contents {
+  transition: all 0.3s ease;
+  width: $sidebarContentWidth;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -$sidebarContentWidth;
+  z-index: 10;
+  background: $sidebarContentBackground;
+
+  &.open {
+    left: $sidebarWidth;
+  }
+
+  .tab-content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: $sidebarContentColor;
+    overflow-y: auto;
+
+    position: absolute;
+    padding: $sidebarContentPadding;
+    opacity: 0;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    // remove this property to display the scrollbars inside each tab content
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+// individual tab styles
+
+// The tab content related to Logo
+#logo {
+  font-size: 18px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    margin-bottom: 60px;
+  }
+
+  .descr {
+    line-height: 1.45;
+
+    .descr-title {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    span {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 20px;
+
+    }
+
+    a {
+      color: $sidebarActiveText;
+      text-decoration: none;
+    }
+  }
+}
+
+// Tab groups from View panel
+.tab-group {
+  color: #999;
+  margin-bottom: 80px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .group-title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+
+    img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+
+  .layers {
+    display: block;
+    width: auto;
+    background: $sidebarColor;
+
+    .layer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 1px;
+      cursor: pointer;
+      text-transform: capitalize;
+
+      .name {
+        flex-grow: 1;
+        transition: all 0.3s ease-in-out;
+        background: #333;
+        line-height: 56px;
+        padding-left: 10px;
+      }
+
+      &:hover {
+        div {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+// eof

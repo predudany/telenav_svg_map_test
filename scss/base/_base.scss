@@ -1,0 +1,15 @@
+
+// Setting the basic properties for fixing the App onto the screen
+// Fixed and fills the screen
+// All it's children stretch from top to bottom
+#app {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    font-family: $baseFontFam;
+}
+
+// eof
